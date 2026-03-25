@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/cb16e5e1da.js" crossorigin="anonymous"></script>
+
+
+    <title>Accueil - Sumi</title>
+</head>
+<body>      
+    
+    <section class="top">
+        <div class="SearchBox">
+            <input type="search" placeholder="Rechercher" id="Search">
+            <a class="closeSearch">&times;</a>
+        </div>
+        
+        <div class="links">
+            
+            <ul>
+                <a href="/index.html" id="logo"><img src="/images/logo.jpg" alt="Logo"></a>
+                <li><a href="/test en cours/catalogue.html"><i class="fa-solid fa-book-open"></i> Catalogue</a></li>
+                <li><a href="#"><i class="fa-solid fa-swatchbook"></i> Genres</a></li>
+                <li><a href="#" class="search_btn"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li>
+                    <div id="mySideBar" class="sidebar">
+                        <div class="account-access">
+                            <a class="account" id="login" href="#"><i class="fa-solid fa-lock-open"></i></a>
+                            <a class="account" id="register" href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                        </div>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav();">&times;</a>
+                        <div class="sidelinks">
+                            <a href="/index.html">Accueil</a>
+                            <a href="/test en cours/catalogue.html">Catalogue</a>
+                            <a href="#">Genres</a>
+                            <a href="#">Historique</a>
+                            <a href="#">Aide</a>
+                            <a href="#">Nous contacter</a>
+                        </div> <!-- .sidelinks -->
+                    </div> <!-- .sidebar -->
+
+                    <div id="main">
+                        <button class="openbtn" onclick="openNav();"><i class="fa-solid fa-bars"></i></button>
+                    </div> <!-- #main -->
+                </li>
+            </ul>
+        </div> <!-- .links -->
+
+        <hr>
+        <div class="nav">
+            <li><a class="novelLink" href="test en cours/catalogue.html" onclick="filters = ['Novel'];"><h2>Novel</h2></a></li>
+            <li><a class="mangaLink" href="test en cours/catalogue.html"><h2>Manga</h2></a></li>
+            <li><a class="webtoonLink" href="test en cours/catalogue.html"><h2>Webtoon</h2></a></li>
+        </div><!-- .nav -->
+        <hr>
+    </section> <!-- .top -->
+
+    <section class="main">
+
+        <div class="hero clearfix">
+            <div class="Slide-container">
+                <div class="slide" id="lastClone">
+                    href="oeuvres/lecteur-omniscient.php"><img src="images/slides/slide3.jpg" class="slide-img">
+                </div>
+                <div class="slide">
+                    <img src="images/slides/slide1.jpg" class="slide-img">
+                </div>
+                <div class="slide">
+                    <img src="images/slides/slide2.jpg" class="slide-img">
+                </div>
+                <div class="slide">
+                    <img src="images/slides/slide3.jpg" class="slide-img">
+                </div>
+                <div class="slide" id="firstClone">
+                    <img src="images/slides/slide1.jpg" class="slide-img">
+                </div>
+                
+                <i class="fa-solid fa-chevron-right" id="nav-next"></i>
+                <i class="fa-sharp fa-solid fa-chevron-left" id="nav-prev"></i>
+            </div>
+                
+        </div> <!-- .hero -->
+
+            <section class="new clearfix">
+                <h3 class="bandeau">Nouveautés</h3>
+                <div class="content">
+                    <div class="prev"><i class="fa-sharp fa-solid fa-chevron-left"></i></div>
+                    <div class="fiche-container">
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <a href="oeuvres/paripi-koumei.php"><img src="/images/fiches/Paripi Koumei.jpg" alt="Paripi Koumei"></a>
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <a href="oeuvres/lecteur-omniscient.php"><img src="/images/fiches/Lecteur Omniscient.jpg" alt="Lecteur Omniscient"></a>
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/I Obtained A Mythic Item.png" alt="I Obtained A Mythic Item">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/Omniscient Reader.jpg" alt="Omniscient Reader">
+                            </div>                            
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/The World After The Fall.png" alt="The World After The Fall">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/The-Beginning-After-The-End.jpg" alt="The-Beginning-After-The-End">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img class="" src="/images/fiches/The Novel's Extra.png" alt="The Novel's Extra">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/Solo Max Level Newbie.png" alt="Solo Max Level Newbie">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/I Obtained A Mythic Item.png" alt="I Obtained A Mythic Item">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/Omniscient Reader.jpg" alt="Omniscient Reader"> 
+                            </div>                            
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/The World After The Fall.png" alt="The World After The Fall">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/The-Beginning-After-The-End.jpg" alt="The-Beginning-After-The-End">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img class="" src="/images/fiches/The Novel's Extra.png" alt="The Novel's Extra">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/Solo Max Level Newbie.png" alt="Solo Max Level Newbie">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/I Obtained A Mythic Item.png" alt="I Obtained A Mythic Item">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/Omniscient Reader.jpg" alt="Omniscient Reader">
+                            </div>                            
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/The World After The Fall.png" alt="The World After The Fall">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/The-Beginning-After-The-End.jpg" alt="The-Beginning-After-The-End">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="next"><i class="fa-solid fa-chevron-right"></i></div>
+                </div>
+            </section> <!-- .new -->
+            <section class="new clearfix">
+                <h3 class="bandeau">Mis à jour</h3>
+                <div class="content">
+                    <div class="prev"><i class="fa-sharp fa-solid fa-chevron-left"></i></div>
+                    <div class="fiche-container">
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img class="" src="/images/fiches/The Novel's Extra.png" alt="The Novel's Extra">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/Solo Max Level Newbie.png" alt="Solo Max Level Newbie">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/I Obtained A Mythic Item.png" alt="I Obtained A Mythic Item">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/Omniscient Reader.jpg" alt="Omniscient Reader">
+                            </div>                            
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/The World After The Fall.png" alt="The World After The Fall">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/The-Beginning-After-The-End.jpg" alt="The-Beginning-After-The-End">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img class="" src="/images/fiches/The Novel's Extra.png" alt="The Novel's Extra">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/Solo Max Level Newbie.png" alt="Solo Max Level Newbie">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/I Obtained A Mythic Item.png" alt="I Obtained A Mythic Item">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/Omniscient Reader.jpg" alt="Omniscient Reader"> 
+                            </div>                            
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/The World After The Fall.png" alt="The World After The Fall">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/The-Beginning-After-The-End.jpg" alt="The-Beginning-After-The-End">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img class="" src="/images/fiches/The Novel's Extra.png" alt="The Novel's Extra">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/Solo Max Level Newbie.png" alt="Solo Max Level Newbie">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/I Obtained A Mythic Item.png" alt="I Obtained A Mythic Item">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/Omniscient Reader.jpg" alt="Omniscient Reader">
+                            </div>                            
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/The World After The Fall.png" alt="The World After The Fall">
+                            </div>
+                        </div>
+                        <div class="fiche">
+                            <div class="fiche-img">
+                                <img src="/images/fiches/The-Beginning-After-The-End.jpg" alt="The-Beginning-After-The-End">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="next"><i class="fa-solid fa-chevron-right"></i></div>
+                </div>
+            </section> <!-- .new -->
+    </section> <!--.main-->
+
+    <hr>
+
+    <section class="footer">
+        
+        <div class="footer-link">
+            <ul>
+                <li><a href="https://discord.gg/EMFv5DN6zD">Discord</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li class="max"><a href="#">À propos de nous</a></li>
+                <li class="max"><a href="#">Contact</a></li>
+                <li class="max"><a href="#">Politique de Confidentialité</a></li>
+                <li class="max"><a href="#"><acr title="Conditions Générales d'Utilisation">C.G.U</acr></a></li>
+            </ul>
+        </div> <!-- .footer-link -->
+        <p> Sumi &copy; 2022 -  Tous Droits Réservés </p>
+
+    </section> <!-- .footer -->
+
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,392 @@
+/* GENERAL */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* On a pas encore décider de la police d'écriture
+du site donc pour l'instant je mets ça pour que 
+ce soit un minimum joli */ 
+
+html {
+    background-color: #222;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    min-height: 100%    ;
+} 
+
+/* SearchBox */
+
+.SearchBox {
+    width: 100%;
+    height: 0;
+    background-color: rgb(55, 55, 55);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+#Search {
+    color: black;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 15px;
+    border-radius: 10px;
+}
+
+.closeSearch {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.closeSearch:hover {
+    color: #ff4747;
+}
+
+.visible {
+    transition: .2s;
+    opacity: 1;
+    height: 50px;
+}
+
+/* TOP */ 
+
+.links {
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.links ul {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.links li {
+    padding: 0 5px;
+    margin: auto;
+    list-style: none;
+    text-align: center;
+}
+
+.links a img {
+    margin: 0 auto;
+} 
+
+#logo {
+    flex-shrink: 0;
+    width: 15vw;
+    height: 15vw;
+    max-height: 50px;
+    max-width: 50px;
+    padding-left: 10px;
+}
+
+#logo img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 350px) {
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+        font-size: 1rem;
+    }
+    .links ul li{
+        font-size: 6vw;
+    }
+    .closeSearch {
+        font-size: 40px;
+    }
+    .nav li {
+        font-size: 5vw;
+    }
+}
+
+
+@media screen and (min-width: 400px) {
+    .links {    
+        justify-content: center;
+    }
+    .links ul li {
+        margin: auto 10px;
+    }
+}
+
+
+/* SIDEBAR */
+
+.links .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.links .sidebar .sidelinks a {
+    padding: 8px 8px 8px 0;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid #bbb;
+}
+
+.links .sidebar .sidelinks a:active {
+    background-color: rgb(31, 31, 31);
+}
+
+.links .sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.links .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.links .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+#main .openbtn {
+    background: none;
+}
+
+.account-access {
+    top: 10px;
+    left: 10px;
+    background-color: #111;
+    position: absolute;
+    display: inline-block;
+    
+}
+
+.account {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+}
+
+@media screen and (max-height: 450px) {
+    .links .sidebar {padding-top: 15px;}
+    .links .sidebar a {font-size: 18px;}
+}
+
+/* NAV */
+
+.nav {
+    text-align: center;
+}
+
+.nav li {
+    padding: 0 5px;
+    display: inline-block;
+}
+
+/* HERO */ 
+
+.Slide-container {
+    display: flex;
+    margin: 0 auto;
+    border-radius: 0 0 5px 5px ;
+    width: 100%;
+    position: relative;
+    height: 30vh;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    scroll-snap-align: center;
+}
+
+.slide-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+@media screen and (min-width: 650px) {
+    .Slide-container {
+        width: 80%;
+        height: 50vh;
+        border-radius: 20px;
+        margin: 0 auto;
+    }
+}
+
+#nav-prev, #nav-next{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    padding: 1em 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    color: rgb(40, 24, 42);
+    background-color: #cdcdcd;
+    border-radius: 50%;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+#nav-prev {
+    left: 2%;
+}
+
+#nav-next {
+    right: 2%;
+}
+
+#nav-prev:active, #nav-next:active{
+    background-color: #6d6d6d;
+}
+
+
+
+/* MAIN */ 
+
+@media screen and (min-width: 650px) {
+    .center {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.bandeau{
+    background-color: blueviolet;
+    margin: .3125rem;
+    text-align: center;
+}
+
+.new {
+    width: 100%;
+}
+
+.content {
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px 0;
+    display: flex;
+}
+
+.prev, .next {
+    width: 10%;
+    padding: 5px 0;
+}
+
+.prev:active, .next:active {
+    background: #6d6d6d;
+}
+
+.fiche-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    transition: 0.5s;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.fiche-container::-webkit-scrollbar{
+    display: none;
+}
+
+.fiche {
+    scroll-snap-align: start;
+    position: relative;
+    align-items: top;
+    min-height: 150px;
+    min-width: 100px;
+    max-height: 150px;
+    max-width: 100px;
+    margin: 0 10px;
+    left: 0;
+    transition: .3s;
+    border: 1px solid #bbb;
+}
+
+.fiche-img {
+    width: 100%;
+    height: 100%;
+}
+
+.fiche-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* FOOTER */ 
+
+.footer {
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+
+.footer ul {
+    padding: 0;
+}
+
+.footer-link li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.footer-link a {
+    color: white;
+}

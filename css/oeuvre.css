@@ -1,0 +1,171 @@
+/* ARTWORK */
+
+.main {
+    margin: 2.5em;
+}
+
+.contain {
+    display: grid;
+    grid-template-columns: 80% 1fr;
+}
+
+.artwork {
+    border: 2px solid black;
+    padding-bottom: 2em;
+}
+
+.image {
+    width: 10em;
+    position: absolute;
+    margin-left: 3.75em;
+    margin-top: -8em;
+}
+
+.image img {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.bookmark {
+    width: 37%;
+    border: 1px solid black;
+    margin-left: 4.375em;
+    margin-top: 10.938em;
+    padding: .625em;
+    border-radius: 5px;
+}
+
+.small {
+    font-size: 15px;
+}
+
+.rate {
+    font-size: large;
+    margin: .625em;
+    margin-left: 4.688em;
+}
+
+.status {
+    margin-left: 3.125em;
+    width: 50%;
+    padding: .625em;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.title {
+    margin: .313em;
+    font-size: 20px;
+}
+
+.synopsis {
+    margin: 4em;
+    padding: 1em;
+    border: 2px dotted lightgray;
+    border-radius: 5px;
+}
+
+.artwork-infos {
+    margin-right: .5em;
+    display: grid;
+    grid-template-columns: 15.625em 1fr;
+}
+
+.infos {
+    margin: .625em;
+    display: grid;
+    border: 1px solid rgb(0, 0, 75);
+    border-radius: 15px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.author, .artist, .last-update, .type {
+    padding: .625em;
+}
+
+.genres {
+    display: grid;
+    grid-template-columns: .45fr .45fr .45fr .45fr .45fr;
+}
+
+.genre {
+    background-color: rgb(153, 153, 153);
+    color: black;
+    border-radius: 5px;
+    margin: .313em;
+    padding: .313em;
+    width: fit-content;
+}
+
+/* CHAPTERS */
+
+.chapters {
+    margin-top: 1.25em;
+    border: 1px solid black;
+}
+
+.chapters .title {
+    border: 1px solid black;
+    padding: .313em;
+    margin: 0;
+    text-align: center;
+}
+
+.chapter-container {
+    padding: .313em;
+}
+
+.chap-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.first-chap, .last-chap {
+    margin: .625em;
+    height: 4.688em;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.first-chap h2, .first-chap h3, .last-chap h2, .last-chap h3{
+    text-align: center;
+    margin: .313em;
+}
+
+div.scroll {
+    height: 15em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 1.25em;
+}
+
+.chap {
+    margin: .313em;
+    padding: .625em;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+/* PUB */
+
+.pub {
+    height: 9.375em;
+    border: 1px solid red;
+    margin: 1.25em 6.25em;
+}
+
+.large-pub {
+    border: 1px solid red;
+    display: inline-block;
+    margin-left: 3.125em;
+    margin: .625em;
+}

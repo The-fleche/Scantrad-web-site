@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue en cours</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cb16e5e1da.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="top">
+        <div class="links">
+            
+            <ul>
+                <a href="/index.html" id="logo"><img src="/images/logo.jpg" alt="Logo"></a>
+                <li><a href="/test en cours/catalogue.html"><i class="fa-solid fa-book-open"></i> Catalogue</a></li>
+                <li><a href="#"><i class="fa-solid fa-swatchbook"></i> Genres</a></li>
+                <li>
+                    <div id="mySideBar" class="sidebar">
+                        <div class="account-access">
+                            <a class="account" id="login" href="#"><i class="fa-solid fa-lock-open"></i></a>
+                            <a class="account" id="register" href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                        </div>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav();">&times;</a>
+                        <div class="sidelinks">
+                            <a href="/index.html">Accueil</a>
+                            <a href="/test en cours/catalogue.html">Catalogue</a>
+                            <a href="#">Genres</a>
+                            <a href="#">Historique</a>
+                            <a href="#">Aide</a>
+                            <a href="#">Nous contacter</a>
+                        </div> <!-- .sidelinks -->
+                    </div> <!-- .sidebar -->
+
+                    <div id="main">
+                        <button class="openbtn" onclick="openNav();"><i class="fa-solid fa-bars"></i></button>
+                    </div> <!-- #main -->
+                </li>
+            </ul>
+        </div> <!-- .links -->
+
+        <hr>
+        <div class="nav">
+            <li><a href="catalogue.html">
+                    <h2>Novel</h2>
+                </a></li>
+            <li><a href="catalogue.html">
+                    <h2>Manga</h2>
+                </a></li>
+            <li><a href="catalogue.html">
+                    <h2>Webtoon</h2>
+                </a></li>
+        </div><!-- .nav -->
+        <hr>
+    </section> <!-- .top -->
+
+    <section class="main">
+        
+        <div class="content">
+            <h1 class="center title">Catalogue</h1>
+
+            <div class="filters ">
+                <div class="filter">Genre
+                    <div class="dropdown-content">
+                        <a href="#">Action</a>
+                        <a href="#">Aventure</a>
+                        <a href="#">Comédie</a>
+                        <a href="#">Drame</a>
+                        <a href="#">Fantaisie</a>
+                        <a href="#">Historique</a>
+                        <a href="#">Horreur</a>
+                        <a href="#">Mystère</a>
+                        <a href="#">Psychologique</a>
+                        <a href="#">Romance</a>
+                        <a href="#">Science-fiction</a>
+                        <a href="#">Surnaturel</a>
+                        <a href="#">Tranche de vie</a>
+                    </div>
+                </div>
+                <div class="filter">Statut
+                    <div class="dropdown-content">
+                        <a href="#">En cours</a>
+                        <a href="#">En pause</a>
+                        <a href="#">Terminé</a>
+                    </div>
+                </div>
+                <div class="filter">Type
+                    <div class="dropdown-content">
+                        <a href="#">Novel</a>
+                        <a href="#">Manga</a>
+                        <a href="#">Manhwa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-selected">
+            <div class="bulles">
+                <!-- se remplit avec le JavaScript -->
+            </div>
+            </div>
+
+            <div class="SearchBox">
+                <input type="search" placeholder="Rechercher" id="Search">
+                <div id="suggestions"></div>
+            </div>
+
+            <div class="fiche-container">
+                <!-- se remplit avec le JavaScript -->
+            </div>  
+        </div>
+
+
+        
+    </section> <!-- .main -->
+    
+    <hr>
+    <section class="footer">
+        
+        <div class="footer-link">
+            <ul>
+                <li><a href="https://discord.gg/EMFv5DN6zD">Discord</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li class="max"><a href="#">À propos de nous</a></li>
+                <li class="max"><a href="#">Contact</a></li>
+                <li class="max"><a href="#">Politique de Confidentialité</a></li>
+                <li class="max"><a href="#"><acr title="Conditions Générales d'Utilisation">C.G.U</acr></a></li>
+            </ul>
+        </div> <!-- .footer-link -->
+        <p> Sumi &copy; 2023 - Tous Droits Réservés </p>
+
+    </section> <!-- .footer -->
+    
+</body>
+ <script src="/test en cours/script.js"></script>
+</html>
